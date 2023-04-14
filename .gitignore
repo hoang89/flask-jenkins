@@ -1,0 +1,4 @@
+.pydev
+.pytest_cache
+.tox
+__pycache__
