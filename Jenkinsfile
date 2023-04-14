@@ -11,6 +11,11 @@ pipeline {
             steps {
                 sh 'python test.py'
             }
+            post {
+                always {
+                    junit 'test-reports/*.xml'
+                }
+            }
         }
     }
 }
