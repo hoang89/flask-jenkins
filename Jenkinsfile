@@ -1,7 +1,7 @@
 /* groovylint-disable-next-line CompileStatic */
 pipeline {
     agent {
-        docker { image 'python:3.7.2' }
+        docker { image 'python:3.8.0' }
     }
     stages {
         stage('build') {
