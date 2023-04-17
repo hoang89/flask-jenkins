@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python -m venv .pydev'
-                sh 'source .pydev/bin/activate'
+                sh '.pydev/bin/activate'
                 sh 'pip3 install --user -r requirements.txt'
             }
         }
